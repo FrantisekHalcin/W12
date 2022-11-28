@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestupne a okruhle roky</title>
+    
+    <style>
+h2 {
+    color:rgb(0, 0, 0);
+    background-image: linear-gradient(90deg, rgb(93, 28, 28), rgb(255, 225, 0), rgb(89, 89, 1));
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+</style>
+</head>
+
+<body>
+
+    <h2>Údaje sú v konzole</h2>
+
+    <script>
+
+        for (let rok = 1980; rok <= 2030; rok++) {
+
+            if (rok == 1988) {
+
+
+                if (rok % 4 == 0) {
+
+                    if (rok % 100 == 0) {
+                        if (rok % 400 == 0)
+                            console.log("P O N " + rok);
+                        else {
+                            console.log("O N " + rok);
+                        }
+                    }
+                    else {
+                        if (rok % 10 == 0) {
+                            console.log("P O N " + rok);
+                        }
+                        else {
+                            console.log("P N " + rok);
+                        }
+                    }
+
+                }
+
+
+                else {
+                    if (rok % 10 == 0) {
+                        console.log("O N " + rok);
+                    }
+                    else {
+                        console.log("N " + rok);
+                    }
+                }
+            }
+            else {
+
+                if (rok % 4 == 0) {
+
+                    if (rok % 100 == 0) {
+                        if (rok % 400 == 0)
+                            console.log("P O " + rok);
+                        else {
+                            console.log("O " + rok);
+                        }
+                    }
+                    else {
+                        if (rok % 10 == 0) {
+                            console.log("P O " + rok);
+                        }
+                        else {
+                            console.log("P " + rok);
+                        }
+                    }
+
+                }
+
+
+                else {
+                    if (rok % 10 == 0) {
+                        console.log("O " + rok);
+                    }
+                    else {
+                        console.log(rok);
+                    }
+                }
+
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
